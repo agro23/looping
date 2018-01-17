@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Count Up By</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class = "well">
+      <div class="panel">
+        <div class="panel-heading"><h2>Count Up By ...</h2></div>
+      <div class="panel-body">
+        <p>
+          Please enter two positive, round numbers - one to count to and another to step by to get there.
+        </p>
+        <form id="counter">
+
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3 class="inLine">Enter Two Positive Numbers:</h3></div>
+          <div class="panel-body">
+            <div class="endNum">
+              <input id="endNum" class="form-control" type="text" placeholder="Enter end point" required>
+            </div>
+            <br/>
+            <div class="stepNum">
+              <input id="stepNum" class="form-control" type="text" placeholder="Enter counting step" required>
+            </div>
+          </div>
+          <button type="submit" class="btn">SUBMIT</button>
+
+        </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+    <div class ="well">
+      <p id="results"></p>
+    </div>
+  </div>
+  </body>
+</html>
