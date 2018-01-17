@@ -32,28 +32,6 @@ $(document).ready(function() {
       }
     }
 
-// regex = "[0-9]+";
-// str.match(regexp)
-
-    //
-    // // alert("endnum = " + endNum);
-    // // alert("stepnum = " + stepNum);
-    // var output = [];
-    // for (var i=stepNum; i <= endNum; i+=stepNum) {
-    //   //endNum1 stepNum2
-    //   output.push(i);
-    //   console.log("i = " +i);
-    // }
-
-// Don't forget to consider how to handle any input that might be submitted:
-//
-// empty values (user just presses enter) X
-// non-numeric values (It may be helpful to read up about the numerical value, NaN) X
-// negative numbers X
-//  count by number is larger than the count to numbers
-
-
-
   // Display Code
     //   Here is some sample input:
     // Count to: 30
@@ -63,12 +41,20 @@ $(document).ready(function() {
     // Count to: 50
     // Count by: 7
     // Output: 7, 14, 21, 28, 35, 42, 49
-  var n = 0;
+    var countTo = endNum;
+    var countBy = stepNum;
+    $("#results").append("Count to: " + countTo + "<br>");
+    $("#results").append("Count by: " + countBy + "<br>");
+    $("#results").append("Output: ");
+    var n = 0;
     output.forEach(function (element) {
-        n=n+1;
-        $("#results").append(output[n-1] + "<br>");
+      n=n+1;
+      if (n < output.length) { extra = ", "; } else { extra = "."; }
+      $("#results").append(output[n-1] + extra);
       console.log("output[n] = " + output[n-1]);
     });
+
+
           // $(myChoice).show();
 
       // $(myChoice+"-close").on("click", function(e){
