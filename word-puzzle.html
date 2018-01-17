@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/words.js"></script>
+    <meta charset="utf-8">
+    <title>Word Puzzle</title>
+  </head>
+  <body class = "aGame">
+    <div class="container">
+      <div class = "well">
+        <div class="panel">
+          <div class="panel-heading"><h2>Word Puzzle</h2></div>
+        </div>
+          <form id="sentence">
+            <div class="panel panel-default">
+              <div class="panel-heading"><h3 class="inLine">Enter a New Sentence:</h3></div>
+              <div class="panel-body">
+                <div class="ourSentence">
+                  <input id="ourSentence" class="form-control" type="text" placeholder="This will be the sentence the player must guess" required>
+                </div>
+              </div>
+              <button type="submit" class="btn">SUBMIT</button>
+            </div>
+          </form>
+      </div>
+          <div class="well">
+            <p id="newSentence"></p>
+          </div>
+          <div class="well" id="theGame">
+            <form id="game">
+              <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="inLine">Guess the Sentence:</h3></div>
+                <div class="panel-body">
+                  <div class="guessSentence">
+                    <input value="" id="guessSentence" class="form-control" type="text" placeholder="This is where you guess the sentence">
+                  </div>
+                </div>
+                <button type="submit" class="btn button2">SUBMIT</button>
+              </div>
+            </form>
+      </div>
+    </div>
+  </body>
+</html>
